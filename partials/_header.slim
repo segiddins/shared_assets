@@ -1,0 +1,11 @@
+header.header
+    #inner-header.wrap.clearfix
+        #site-title.h1
+            a href="//segiddins.me" rel="nofollow" = "Samuel E. Giddins"
+        #site-description
+            h2 = "Badass. UChicago 2018."
+        nav#site-navigation
+            ul
+                - for site, link in pages do
+                    li
+                        a href=link = site
