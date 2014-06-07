@@ -2,11 +2,11 @@ footer.container.footer
     #inner-footer.clearfix
         section.recent.wrap.sevencol.first.clearfix
             nav.pagination
-                p = "Pagination"
+                / p = "Pagination"
         section.sidebar.fivecol.clearfix
             header.sidebar-header
-                h3 = "Samuel E. Giddins"
-                h4 = "Badass. UChicago 2018."
+                h3 = me['name']
+                h4 = me['description']
             nav.sidebar-menu.vertical
                 ul
                     - for page, link in pages
@@ -14,12 +14,7 @@ footer.container.footer
                             a href=link = page
                             - unless pages.keys.index(page) == pages.length - 1
                                 span = ' | '
-            section.social.wrap
-                div
-                    / http://drinchev.github.io/monosocialiconsfont/
-                    a href='https://github.com/segiddins' rel='me' class='symbol' title='&#xe036;'
-                    <a href='https://twitter.com/segiddins' rel="me" class='symbol' title='&#xe086;'></a>
-                    <a href='https://linkedin.com/in/segiddins' rel="me" class='symbol' title='&#xe052;'></a>
+            == shared_partial('social')
     .source-og.copyright
         span = '© 2012-2014 '
         a href='//segiddins.me' = 'Samuel E. Giddins'

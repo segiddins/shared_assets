@@ -1,9 +1,10 @@
 header.header
     #inner-header.wrap.clearfix
         #site-title.h1
-            a href="//segiddins.me" rel="nofollow" = "Samuel E. Giddins"
+            a href="//segiddins.me" rel="nofollow" = me['name']
         #site-description
-            h2 = "Badass. UChicago 2018."
+            h2 = me['description']
+        == shared_partial('social')
         nav#site-navigation
             ul
                 - for site, link in pages do

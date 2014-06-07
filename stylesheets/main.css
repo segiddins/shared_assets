@@ -1126,11 +1126,11 @@ FOOTER STYLES
 .sidebar nav a:link {
     -webkit-tap-highlight-color: #fbfbfb;
 }
-.sidebar .social {
+.social {
     color: #fbfbfb;
     text-align: center;
 }
-.sidebar .social a.symbol {
+.social a.symbol {
     color: #fbfbfb;
     font-size: 1.8em;
 }
@@ -1391,11 +1391,15 @@ in general anyone not viewing on a small mobile device.
     .sidebar nav a:hover, .sidebar nav a:focus {
         color: #00e4ff;
     }
-    .sidebar .social {
+    .social {
         color: #fbfbfb;
         text-align: left;
     }
-    .sidebar .social a.symbol {
+    .header .social {
+        text-align: center;
+        font-size: 1.8em;
+    }
+    .social a.symbol {
         color: #333333;
     }
 }
