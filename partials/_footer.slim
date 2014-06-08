@@ -1,8 +1,16 @@
 footer.container.footer
     #inner-footer.clearfix
         section.recent.wrap.sevencol.first.clearfix
-            nav.pagination
-                / p = "Pagination"
+            - if l = @pagination_links
+                nav.pagination
+                    - if p = l[:previous]
+                        a.newer-posts href=p[:href] = '&larr; Previous' || p[:name]
+                    span.page-number =  "Page #{l[:current]} of #{l[:total]}"
+                    - if n = l[:next]
+                        a.older-posts href=n[:href] =  n[:name] ||'Next &rarr;'
+                    - archive = l[:archive] || {}
+                    p
+                        a href=(archive[:href] || '//blog.segiddins.me/archive') = (archive[:name] || 'Archive')
         section.sidebar.fivecol.clearfix
             header.sidebar-header
                 h3 = me['name']

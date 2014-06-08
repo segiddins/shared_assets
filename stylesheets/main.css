@@ -1,3 +1,18 @@
+.year {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 1em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+.year h2 {
+    padding-bottom: 1em;
+    font-size: 3em;
+}
+.post-archive {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
 /******************************************************************
 Site Name: The Classy Theme
 Author: Theme Spectre, LLC
@@ -827,6 +842,15 @@ NAVIGATION STYLES
     text-align: center;
     text-transform: uppercase;
 }
+
+.index-header {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 3.2em;
+}
+
 #site-navigation.clone {
     display: none;
 }
@@ -1022,7 +1046,7 @@ POSTS & CONTENT STYLES
     text-align: center;
 }
 .article-footer .tag-label:after {
-    content:",";
+    content:", ";
 }
 .article-footer .tag-label:last-child:after {
     content:"";
