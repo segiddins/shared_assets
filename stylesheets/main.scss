@@ -1,3 +1,71 @@
+.resume {
+    $separator: ' ✦ ';
+    .name {
+        text-align: center;
+        padding-top: 0;
+    }
+    .contact {
+        text-align: center;
+        .street:after {
+            content: $separator;
+        }
+        .city:after {
+            content: ', ';
+        }
+        .state:after {
+            content: ' ';
+        }
+        .zip:after {
+            content: '\a';
+            white-space: pre;
+        }
+        .phone:after, .email:after {
+            content: $separator;
+        }
+    }
+    .profile {
+        margin-bottom: 1em;
+    }
+    h3 {
+        margin-top: .6em;
+        margin-bottom: .4em;
+    }
+
+    .work, .education {
+        .school, .job {
+            padding-bottom: 1.6em;
+            &:last-of-type {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            .years, .position, .degree {
+                font-style: italic;
+            }
+        }
+    }
+
+    .hobbies {
+        ul {
+            list-style-position:outside;
+            li {
+                padding: 0;
+                position: outside;
+            }
+        }
+    }
+
+    .skills {
+        .open-source {
+            .link:after {
+                content: ', ';
+            }
+            .link:last-of-type:after {
+                content: '';
+            }
+        }
+    }
+}
+
 .year {
     border-bottom: 1px solid #dbdbdb;
     padding-bottom: 1em;
