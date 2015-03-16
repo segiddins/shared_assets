@@ -762,15 +762,15 @@ Stylesheet: Web Fonts
 */
 @font-face {
     font-family:'Museo Slab';
-    src: url("http://static.tumblr.com/macsvao/OLqn3kym0/museo_slab_500_2-webfont.eot");
-    src: url("http://static.tumblr.com/macsvao/OLqn3kym0/museo_slab_500_2-webfont.eot#iefix") format("embedded-opentype"), url("http://static.tumblr.com/macsvao/99Yn3kym1/museo_slab_500_2-webfont.woff") format("woff"), url("http://static.tumblr.com/macsvao/NS9n3kym1/museo_slab_500_2-webfont.ttf") format("truetype"), url("http://static.tumblr.com/macsvao/cMon3kym0/museo_slab_500_2-webfont.svg#museo_slab500") format("svg");
+    src: font-url("museo_slab_500_2-webfont.eot");
+    src: font-url("museo_slab_500_2-webfont.eot#iefix") format("embedded-opentype"), font-url("museo_slab_500_2-webfont.woff") format("woff"), font-url("museo_slab_500_2-webfont.ttf") format("truetype"), font-url("museo_slab_500_2-webfont.svg#museo_slab500") format("svg");
     font-weight:'normal';
     font-style: normal;
 }
 @font-face {
     font-family:'Museo Slab';
-    src: url("http://static.tumblr.com/macsvao/yRPn3kym1/museo_slab_500italic-webfont.eot");
-    src: url("http://static.tumblr.com/macsvao/yRPn3kym1/museo_slab_500italic-webfont.eot?#iefix") format("embedded-opentype"), url("http://static.tumblr.com/macsvao/zM3n3kym2/museo_slab_500italic-webfont.woff") format("woff"), url("http://static.tumblr.com/macsvao/wHUn3kym2/museo_slab_500italic-webfont.ttf") format("truetype"), url("http://static.tumblr.com/macsvao/91Fn3kym2/museo_slab_500italic-webfont.svg#MuseoSlab500Italic") format("svg");
+    src: font-url("museo_slab_500italic-webfont.eot");
+    src: font-url("museo_slab_500italic-webfont.eot?#iefix") format("embedded-opentype"), font-url("museo_slab_500italic-webfont.woff") format("woff"), font-url("museo_slab_500italic-webfont.ttf") format("truetype"), font-url("museo_slab_500italic-webfont.svg#MuseoSlab500Italic") format("svg");
     font-weight:'normal-italic';
     font-style: italic;
 }
@@ -785,9 +785,9 @@ Stylesheet: Web Fonts
 */
 @font-face {
     font-family:'Mono Social Icons Font';
-    src: url("http://static.tumblr.com/macsvao/kL4n3l6ja/monosocialiconsfont-1.10.eot");
-    src: url("http://static.tumblr.com/macsvao/kL4n3l6ja/monosocialiconsfont-1.10.eot?#iefix") format("embedded-opentype"), url("http://static.tumblr.com/macsvao/rJan3l6jc/monosocialiconsfont-1.10.woff") format("woff"), url("http://static.tumblr.com/macsvao/SEan3l6jc/monosocialiconsfont-1.10.ttf") format("truetype"), url("http://static.tumblr.com/macsvao/Prdn3l6jb/monosocialiconsfont-1.10.svg#MonoSocialIconsFont") format("svg");
-    src: url("http://static.tumblr.com/macsvao/SEan3l6jc/monosocialiconsfont-1.10.ttf") format("truetype");
+    src: font-url("monosocialiconsfont-1.10.eot");
+    src: font-url("monosocialiconsfont-1.10.eot?#iefix") format("embedded-opentype"), font-url("monosocialiconsfont-1.10.woff") format("woff"), font-url("monosocialiconsfont-1.10.ttf") format("truetype"), font-url("monosocialiconsfont-1.10.svg#MonoSocialIconsFont") format("svg");
+    src: font-url("monosocialiconsfont-1.10.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
